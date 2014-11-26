@@ -58,21 +58,21 @@ Scene, Sprite and MovieClip all extend DisplayObject. So all have the following 
 
 ### Methods
 
-**show()**
+#### show()
 
 Shows the DisplayObject.
 
 > returns the instance of the `DisplayObject`
 
 
-**hide()**
+#### hide()
 
 Hides the DisplayObject.
 
 > returns the instance of the `DisplayObject`
 
 
-**globalToLocal(point)**
+#### globalToLocal(point)
 
 Converts a global point into a local point.
 
@@ -80,7 +80,7 @@ Converts a global point into a local point.
 > > *point* - The global `Point` to convert  
 
 
-**localToGlobal(point)**
+#### localToGlobal(point)
 
 Converts a local point into a global point.
 
@@ -88,11 +88,11 @@ Converts a local point into a global point.
 > > *point* - The local `Point` to convert  
 
 
-**destroy()**
+#### destroy()
 
 Destroys the instance
 
-**transition(duration[,ease,delay])**
+#### transition(duration[,ease,delay])
 
 Adds a CSS transition to the element
 
@@ -105,39 +105,39 @@ Adds a CSS transition to the element
 
 Setters with the force property forces a render rather than waiting for the next render cycle.
 
-**setVisible(value)**  
-**getVisible()**  
-**setOpacity(value)**  
-**getOpacity()**  
-**setButtonMode(value)**  
-**getButtonMode()**  
-**setName(value)**  
-**getName()**  
-**setId(value)**  
-**setIndex(value)**  
-**getIndex()**  
-**setInteractive(value)**  
-**getInteractive()**  
-**setOrigin(value)**  
-**getOrigin()**  
-**setX(value[,force])**  
-**getX()**  
-**setY(value[,force])**  
-**getY()**  
-**setRotation(value[,force])**  
-**getRotation()**  
-**setContentWidth(value[,force])**  
-**getContentWidth()**  
-**setContentHeight(value[,force])**  
-**getContentHeight()**  
-**setWidth(value[,force])**  
-**getWidth()**  
-**setHeight(value[,force])**  
-**getHeight()**  
-**setScaleX(value[,force])**  
-**getScaleX()**  
-**setScaleY(value[,force])**  
-**getScaleY()**  
+#### setVisible(value)  
+#### getVisible()  
+#### setOpacity(value)  
+#### getOpacity()  
+#### setButtonMode(value)  
+#### getButtonMode()  
+#### setName(value)  
+#### getName()  
+#### setId(value)  
+#### setIndex(value)  
+#### getIndex()  
+#### setInteractive(value)  
+#### getInteractive()  
+#### setOrigin(value)  
+#### getOrigin()  
+#### setX(value[,force])  
+#### getX()  
+#### setY(value[,force])  
+#### getY()  
+#### setRotation(value[,force])  
+#### getRotation()  
+#### setContentWidth(value[,force])  
+#### getContentWidth()  
+#### setContentHeight(value[,force])  
+#### getContentHeight()  
+#### setWidth(value[,force])  
+#### getWidth()  
+#### setHeight(value[,force])  
+#### getHeight()  
+#### setScaleX(value[,force])  
+#### getScaleX()  
+#### setScaleY(value[,force])  
+#### getScaleY()  
 
 
 ## Scene
@@ -147,7 +147,7 @@ A scene is your complete canvas to add other display objects to.
 
 ### Constructor
 
-**new Scene(element[,options])**
+#### new Scene(element[,options])
 
 > > *element* - The html element to use as the scene and add child elements to  
 > > *options* - Configuration options from DisplayObject or the table below  
@@ -162,7 +162,7 @@ A scene is your complete canvas to add other display objects to.
 
 ### Methods
 
-**add(displayObject)**
+#### add(displayObject)
 
 Add an instance of a `DisplayObject` (`Sprite` or `MovieClip`) to the `Scene`
 
@@ -170,7 +170,7 @@ Add an instance of a `DisplayObject` (`Sprite` or `MovieClip`) to the `Scene`
 > > *displayObject* - The `DisplayObject` to add  
 
 
-**add(displayObjectType,data[,options])** 
+#### add(displayObjectType,data[,options]) 
 
 Shorthand way of creating a `Sprite` or `MovieClip` and adding it to the `Scene`
 
@@ -180,24 +180,24 @@ Shorthand way of creating a `Sprite` or `MovieClip` and adding it to the `Scene`
 > > *options* - The configuration options to pass to the new `DisplayObject` instance  
 
 
-**remove(child)**
+#### remove(child)
 
 Remove a child `DisplayObject` instance from the scene
 
 > > *child* - The instance of a `DisplayObject` to remove  
 
 
-**destroy()**
+#### destroy()
 
 Destroys the scene for garbage collection, destroying all children and removing all elements
 
 	
-**pause()**
+#### pause()
 
 Pauses the whole `Scene` and all it's children
 
 	
-**unpause()**
+#### unpause()
 
 Unpauses a paused `Scene`
 
@@ -209,7 +209,7 @@ A `Sprite` is a single frame `DisplayObject`
 
 ### Constructor
 
-**new Scene.Sprite(image[,options])**
+#### new Scene.Sprite(image[,options])
  
 > > *image* - The image path of the image to use for the sprite  
 > > *options* - Configuration options from DisplayObject or the table below  
@@ -229,7 +229,7 @@ A `MovieClip` is a multi framed `DisplayIbject`
 
 ### Constructor
 
-**new Scene.MovieClip(data[,options])**
+#### new Scene.MovieClip(data[,options])
  
 > > *data* - The animation frame data, see the Frame Data section for more information  
 > > *options* - Configuration options from DisplayObject or the table below  
@@ -244,7 +244,7 @@ A `MovieClip` is a multi framed `DisplayIbject`
 
 ### Methods
 
-**addAnimation(name,min,max)**
+#### addAnimation(name,min,max)
 
 Add an animation which is a sequence of frames in the `MovieClip`
 
@@ -254,7 +254,7 @@ Add an animation which is a sequence of frames in the `MovieClip`
 > > *max* - The last frame to play  
 
 
-**removeAnimation(name)**
+#### removeAnimation(name)
 
 Remove an animation
 
@@ -262,7 +262,7 @@ Remove an animation
 > > *name* - The identifier of the animation you wish to remove  
 
 
-**updatePlayOptions(options)**
+#### updatePlayOptions(options)
 
 Update the play options of this `MovieClip`
 
@@ -270,7 +270,7 @@ Update the play options of this `MovieClip`
 > > *options* - The play options you wish to set  
 
 
-**then(func)**
+#### then(func)
 
 Add a function to be triggered when the current sequence has finished
 
@@ -278,12 +278,12 @@ Add a function to be triggered when the current sequence has finished
 > > *func* - The function to call  
 
 
-**clearQueue()**
+#### clearQueue()
 
 Clears the queue of functions added by using `then(func)`
 
 
-**addDelay(frames)**
+#### addDelay(frames)
 
 Pauses playback of the `MovieClip` for a number of frames
 
@@ -291,14 +291,14 @@ Pauses playback of the `MovieClip` for a number of frames
 > > *frames* - The number of frames to pause playback for  
 
 
-**clearDelay()**
+#### clearDelay()
 
 Clears any currently active delay
 
 > returns the current instance of the `MovieClip`
 
 
-**play([options])**
+#### play([options])
 
 Plays the `MovieClip`
 
@@ -306,26 +306,26 @@ Plays the `MovieClip`
 > > *options* - The play options to use  
 
 
-**stop()**
+#### stop()
 
 Stops the `MovieClip` if it is playing
 
 
-**nextFrame()**
+#### nextFrame()
 
 Jumps to the next frame, if the playhead is on the last frame it will jump to the first
 
 > returns the current instance of the `MovieClip`
 
 
-**previousFrame()**
+#### previousFrame()
 
 Jumps to the previous frame, if the playhead is on on the first frame it will jump to the last
 
 > returns the current instance of the `MovieClip`
 
 
-**gotoAndPlay(frame[,options])**
+#### gotoAndPlay(frame[,options])
 
 Goes to a specified frame of the `MovieClip` and starts playing
 
@@ -334,7 +334,7 @@ Goes to a specified frame of the `MovieClip` and starts playing
 > > *options* - The play options to use  
 
 
-**gotoAndStop(frame)**
+#### gotoAndStop(frame)
 
 Goes to a specified frame of the `MovieClip` and stops
 
@@ -342,7 +342,7 @@ Goes to a specified frame of the `MovieClip` and stops
 > > *frame* - The frame to go to, it can be either a `string` for a cue point or animation or an `integer`  
 
 
-**addCuePoint(name,frame)**
+#### addCuePoint(name,frame)
 
 Adds a cue point to reference
 
@@ -351,7 +351,7 @@ Adds a cue point to reference
 > > *frame* - The frame number to add the cue point  
 
 
-**stopRepeating()**
+#### stopRepeating()
 
 If playback has been set to repeat, it stops at the end of the current loop
 
