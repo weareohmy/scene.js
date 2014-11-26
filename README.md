@@ -68,7 +68,7 @@ returns the instance of the `DisplayObject`
 Hides the DisplayObject.
 returns the instance of the `DisplayObject`
 
-**globalToLocal(point) **
+**globalToLocal(point)**
 
 Converts a global point into a local point.
 returns the local `Point` in relation to the `DisplayObject`
@@ -97,37 +97,69 @@ Adds a CSS transition to the element
 Setters with the force property forces a render rather than waiting for the next render cycle.
 
 **setVisible(value)**
+
 **getVisible()**
+
 **setOpacity(value)**
+
 **getOpacity()**
+
 **setButtonMode(value)**
+
 **getButtonMode()**
+
 **setName(value)**
+
 **getName()**
+
 **setId(value)**
+
 **setIndex(value)**
+
 **getIndex()**
+
 **setInteractive(value)**
+
 **getInteractive()**
+
 **setOrigin(value)**
+
 **getOrigin()**
+
 **setX(value[,force])**
+
 **getX()**
+
 **setY(value[,force])**
+
 **getY()**
+
 **setRotation(value[,force])**
+
 **getRotation()**
+
 **setContentWidth(value[,force])**
+
 **getContentWidth()**
+
 **setContentHeight(value[,force])**
+
 **getContentHeight()**
+
 **setWidth(value[,force])**
+
 **getWidth()**
+
 **setHeight(value[,force])**
+
 **getHeight()**
+
 **setScaleX(value[,force])**
+
 **getScaleX()**
+
 **setScaleY(value[,force])**
+
 **getScaleY()**
 
 
