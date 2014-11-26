@@ -71,8 +71,8 @@ returns the instance of the `DisplayObject`
 **globalToLocal(point)**
 
 Converts a global point into a local point.
-returns the local `Point` in relation to the `DisplayObject`
-  *point* The global `Point` to convert
+> returns the local `Point` in relation to the `DisplayObject`
+> > *point* The global `Point` to convert
 
 **localToGlobal(point)**
 
@@ -224,7 +224,7 @@ A `Sprite` is a single frame `DisplayObject`
 
 ### Constructor
 
-new Scene.Sprite(image[,options])
+**new Scene.Sprite(image[,options])**
  
   *image* The image path of the image to use for the sprite
   *options* Configuration options from DisplayObject or the table below
