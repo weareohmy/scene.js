@@ -58,77 +58,77 @@ Scene, Sprite and MovieClip all extend DisplayObject. So all have the following 
 
 ### Methods
 
-** show() **
+**show()**
 
 Shows the DisplayObject.
 returns the instance of the `DisplayObject`
 
-** hide() **
+**hide()**
 
 Hides the DisplayObject.
 returns the instance of the `DisplayObject`
 
-** globalToLocal(point) **
+**globalToLocal(point) **
 
 Converts a global point into a local point.
 returns the local `Point` in relation to the `DisplayObject`
-  * point * The global `Point` to convert
+  *point* The global `Point` to convert
 
-** localToGlobal(point) **
+**localToGlobal(point)**
 
 Converts a local point into a global point.
 returns the global `Point` in relation to the `DisplayObject`
-  * point * The local `Point` to convert
+  *point* The local `Point` to convert
 
-** destroy() **
+**destroy()**
 
 Destroys the instance
 
-** transition(duration[,ease,delay]) **
+**transition(duration[,ease,delay])**
 
 Adds a CSS transition to the element
-  * duration * The transition duration
-  * ease * Defaults to `"linear"`. The easing formula
-  * delay * Defaults to `0`. Any delay
+  *duration* The transition duration
+  *ease* Defaults to `"linear"`. The easing formula
+  *delay* Defaults to `0`. Any delay
 
 
 ### Getters/Setters
 
 Setters with the force property forces a render rather than waiting for the next render cycle.
 
-** setVisible(value) **
-** getVisible() **
-** setOpacity(value) **
-** getOpacity() **
-** setButtonMode(value) **
-** getButtonMode() **
-** setName(value) **
-** getName() **
-** setId(value) **
-** setIndex(value) **
-** getIndex() **
-** setInteractive(value) **
-** getInteractive() **
-** setOrigin(value) **
-** getOrigin() **
-** setX(value[,force]) **
-** getX() **
-** setY(value[,force]) **
-** getY() **
-** setRotation(value[,force]) **
-** getRotation() **
-** setContentWidth(value[,force]) **
-** getContentWidth() **
-** setContentHeight(value[,force]) **
-** getContentHeight() **
-** setWidth(value[,force]) **
-** getWidth() **
-** setHeight(value[,force]) **
-** getHeight() **
-** setScaleX(value[,force]) **
-** getScaleX() **
-** setScaleY(value[,force]) **
-** getScaleY() **
+**setVisible(value)**
+**getVisible()**
+**setOpacity(value)**
+**getOpacity()**
+**setButtonMode(value)**
+**getButtonMode()**
+**setName(value)**
+**getName()**
+**setId(value)**
+**setIndex(value)**
+**getIndex()**
+**setInteractive(value)**
+**getInteractive()**
+**setOrigin(value)**
+**getOrigin()**
+**setX(value[,force])**
+**getX()**
+**setY(value[,force])**
+**getY()**
+**setRotation(value[,force])**
+**getRotation()**
+**setContentWidth(value[,force])**
+**getContentWidth()**
+**setContentHeight(value[,force])**
+**getContentHeight()**
+**setWidth(value[,force])**
+**getWidth()**
+**setHeight(value[,force])**
+**getHeight()**
+**setScaleX(value[,force])**
+**getScaleX()**
+**setScaleY(value[,force])**
+**getScaleY()**
 
 
 ## Scene
@@ -138,10 +138,10 @@ A scene is your complete canvas to add other display objects to.
 
 ### Constructor
 
-** new Scene(element[,options]) **
+**new Scene(element[,options])**
 
-  * element * The html element to use as the scene and add child elements to
-  * options * Configuration options from DisplayObject or the table below
+  *element* The html element to use as the scene and add child elements to
+  *options* Configuration options from DisplayObject or the table below
 
 
 ### Options
@@ -153,34 +153,34 @@ A scene is your complete canvas to add other display objects to.
 
 ### Methods
 
-** add(displayObject) **
+**add(displayObject)**
 
 Add an instance of a `DisplayObject` (`Sprite` or `MovieClip`) to the `Scene`
 returns the instance of the `DisplayObject` added to the `Scene`
-  * displayObject * The `DisplayObject` to add
+  *displayObject* The `DisplayObject` to add
 
-** add(displayObjectType,data[,options]) ** 
+**add(displayObjectType,data[,options])** 
 
 Shorthand way of creating a `Sprite` or `MovieClip` and adding it to the `Scene`
 returns the instance of the `DisplayObject` added to the `Scene`
-  * displayObjectType * The type to create and add `Scene.MOVIE_CLIP` or `Scene.SPRITE`
-  * data * The image path for a `Sprite` or data object for for a `MovieClip`
-  * options * The configuration options to pass to the new `DisplayObject` instance
+  *displayObjectType* The type to create and add `Scene.MOVIE_CLIP` or `Scene.SPRITE`
+  *data* The image path for a `Sprite` or data object for for a `MovieClip`
+  *options* The configuration options to pass to the new `DisplayObject` instance
 
-** remove(child) **
+**remove(child)**
 
 Remove a child `DisplayObject` instance from the scene
-  * child * The instance of a `DisplayObject` to remove
+  *child* The instance of a `DisplayObject` to remove
 
-** destroy() **
+**destroy()**
 
 Destroys the scene for garbage collection, destroying all children and removing all elements
 	
-** pause() **
+**pause()**
 
 Pauses the whole `Scene` and all it's children
 	
-** unpause() **
+**unpause()**
 
 Unpauses a paused `Scene`
 
@@ -194,8 +194,8 @@ A `Sprite` is a single frame `DisplayObject`
 
 new Scene.Sprite(image[,options])
  
-  * image * The image path of the image to use for the sprite
-  * options * Configuration options from DisplayObject or the table below
+  *image* The image path of the image to use for the sprite
+  *options* Configuration options from DisplayObject or the table below
 
 
 ### Options
@@ -212,10 +212,10 @@ A `MovieClip` is a multi framed `DisplayIbject`
 
 ### Constructor
 
-new Scene.MovieClip(data[,options])
+**new Scene.MovieClip(data[,options])**
  
-  * data * The animation frame data, see the Frame Data section for more information
-  * options * Configuration options from DisplayObject or the table below
+  *data* The animation frame data, see the Frame Data section for more information
+  *options* Configuration options from DisplayObject or the table below
 
 
 ### Options
@@ -227,88 +227,88 @@ new Scene.MovieClip(data[,options])
 
 ### Methods
 
-** addAnimation(name,min,max) **
+**addAnimation(name,min,max)**
 
 Add an animation which is a sequence of frames in the `MovieClip`
 returns the current instance of the `MovieClip`
-  * name * An identifier, if animation already exists with this name it will be replaced
-  * min * The frame on which to start
-  * max * The last frame to play
+  *name* An identifier, if animation already exists with this name it will be replaced
+  *min* The frame on which to start
+  *max* The last frame to play
 
-** removeAnimation(name) **
+**removeAnimation(name)**
 
 Remove an animation
 returns the current instance of the `MovieClip`
-  * name * The identifier of the animation you wish to remove
+  *name* The identifier of the animation you wish to remove
 
-** updatePlayOptions(options) **
+**updatePlayOptions(options)**
 
 Update the play options of this `MovieClip`
 returns the current instance of the `MovieClip`
-  * options * The play options you wish to set
+  *options* The play options you wish to set
 
-** then(func) **
+**then(func)**
 
 Add a function to be triggered when the current sequence has finished
 returns the current instance of the `MovieClip`
-  * func * The function to call
+  *func* The function to call
 
-** clearQueue() **
+**clearQueue()**
 
 Clears the queue of functions added by using `then(func)`
 
-** addDelay(frames) **
+**addDelay(frames)**
 
 Pauses playback of the `MovieClip` for a number of frames
 returns the current instance of the `MovieClip`
-  * frames * The number of frames to pause playback for
+  *frames* The number of frames to pause playback for
 
-** clearDelay() **
+**clearDelay()**
 
 Clears any currently active delay
 returns the current instance of the `MovieClip`
 
-** play([options]) **
+**play([options])**
 
 Plays the `MovieClip`
 returns the current instance of the `MovieClip`
-  * options * The play options to use
+  *options* The play options to use
 
-** stop() **
+**stop()**
 
 Stops the `MovieClip` if it is playing
 
-** nextFrame() **
+**nextFrame()**
 
 Jumps to the next frame, if the playhead is on the last frame it will jump to the first
 returns the current instance of the `MovieClip`
 
-previousFrame()
+**previousFrame()**
 
 Jumps to the previous frame, if the playhead is on on the first frame it will jump to the last
 returns the current instance of the `MovieClip`
 
-gotoAndPlay(frame[,options])
+**gotoAndPlay(frame[,options])**
 
 Goes to a specified frame of the `MovieClip` and starts playing
 returns the current instance of the `MovieClip`
-  * frame * The frame to go to, it can be either a `string` for a cuepoint or animation or an `integer`
-  * options * The play options to use
+  *frame* The frame to go to, it can be either a `string` for a cuepoint or animation or an `integer`
+  *options* The play options to use
 
-gotoAndStop(frame)
+**gotoAndStop(frame)**
 
 Goes to a specified frame of the `MovieClip` and stops
 returns the current instance of the `MovieClip`
-  * frame * The frame to go to, it can be either a `string` for a cue point or animation or an `integer`
+  *frame* The frame to go to, it can be either a `string` for a cue point or animation or an `integer`
 
-addCuePoint(name,frame)
+**addCuePoint(name,frame)**
 
 Adds a cue point to reference
 returns the current instance of the `MovieClip`
-  * name * The name to use for the cue point
-  * frame * The frame number to add the cue point
+  *name* The name to use for the cue point
+  *frame* The frame number to add the cue point
 
-stopRepeating()
+**stopRepeating()**
 
 If playback has been set to repeat, it stops at the end of the current loop
 returns the current instance of the `MovieClip`
@@ -332,7 +332,7 @@ Scene.js currently supports two different data types, Zoe exported data and basi
 
 #### Zoe
 
-```
+``` JSON
 {
 	"framerate":24,
 	"images":["img/animated/man/man_0.png", "img/animated/man/man_1.png", "img/animated/man/man_2.png"],
@@ -347,6 +347,7 @@ Scene.js currently supports two different data types, Zoe exported data and basi
 
 #### Basic
 
+``` JSON
 {
 	"images":[
 		"img/animated/woman/woman-x244-y69-frame0.png",
@@ -354,3 +355,4 @@ Scene.js currently supports two different data types, Zoe exported data and basi
 		...
 	]
 }
+```
