@@ -61,24 +61,28 @@ Scene, Sprite and MovieClip all extend DisplayObject. So all have the following 
 **show()**
 
 Shows the DisplayObject.
+
 returns the instance of the `DisplayObject`
 
 **hide()**
 
 Hides the DisplayObject.
+
 returns the instance of the `DisplayObject`
 
 **globalToLocal(point)**
 
 Converts a global point into a local point.
+
 returns the local `Point` in relation to the `DisplayObject`
 > *point* The global `Point` to convert
 
 **localToGlobal(point)**
 
 Converts a local point into a global point.
+
 returns the global `Point` in relation to the `DisplayObject`
-  *point* The local `Point` to convert
+> *point* The local `Point` to convert
 
 **destroy()**
 
@@ -87,9 +91,10 @@ Destroys the instance
 **transition(duration[,ease,delay])**
 
 Adds a CSS transition to the element
-  *duration* The transition duration
-  *ease* Defaults to `"linear"`. The easing formula
-  *delay* Defaults to `0`. Any delay
+
+> *duration* The transition duration
+> *ease* Defaults to `"linear"`. The easing formula
+> *delay* Defaults to `0`. Any delay
 
 
 ### Getters/Setters
@@ -172,8 +177,8 @@ A scene is your complete canvas to add other display objects to.
 
 **new Scene(element[,options])**
 
-  *element* The html element to use as the scene and add child elements to
-  *options* Configuration options from DisplayObject or the table below
+> *element* The html element to use as the scene and add child elements to
+> *options* Configuration options from DisplayObject or the table below
 
 
 ### Options
@@ -188,21 +193,24 @@ A scene is your complete canvas to add other display objects to.
 **add(displayObject)**
 
 Add an instance of a `DisplayObject` (`Sprite` or `MovieClip`) to the `Scene`
+
 returns the instance of the `DisplayObject` added to the `Scene`
-  *displayObject* The `DisplayObject` to add
+> *displayObject* The `DisplayObject` to add
 
 **add(displayObjectType,data[,options])** 
 
 Shorthand way of creating a `Sprite` or `MovieClip` and adding it to the `Scene`
+
 returns the instance of the `DisplayObject` added to the `Scene`
-  *displayObjectType* The type to create and add `Scene.MOVIE_CLIP` or `Scene.SPRITE`
-  *data* The image path for a `Sprite` or data object for for a `MovieClip`
-  *options* The configuration options to pass to the new `DisplayObject` instance
+> *displayObjectType* The type to create and add `Scene.MOVIE_CLIP` or `Scene.SPRITE`
+> *data* The image path for a `Sprite` or data object for for a `MovieClip`
+> *options* The configuration options to pass to the new `DisplayObject` instance
 
 **remove(child)**
 
 Remove a child `DisplayObject` instance from the scene
-  *child* The instance of a `DisplayObject` to remove
+
+> *child* The instance of a `DisplayObject` to remove
 
 **destroy()**
 
@@ -226,8 +234,8 @@ A `Sprite` is a single frame `DisplayObject`
 
 **new Scene.Sprite(image[,options])**
  
-  *image* The image path of the image to use for the sprite
-  *options* Configuration options from DisplayObject or the table below
+> *image* The image path of the image to use for the sprite
+> *options* Configuration options from DisplayObject or the table below
 
 
 ### Options
@@ -246,8 +254,8 @@ A `MovieClip` is a multi framed `DisplayIbject`
 
 **new Scene.MovieClip(data[,options])**
  
-  *data* The animation frame data, see the Frame Data section for more information
-  *options* Configuration options from DisplayObject or the table below
+> *data* The animation frame data, see the Frame Data section for more information
+> *options* Configuration options from DisplayObject or the table below
 
 
 ### Options
@@ -262,28 +270,32 @@ A `MovieClip` is a multi framed `DisplayIbject`
 **addAnimation(name,min,max)**
 
 Add an animation which is a sequence of frames in the `MovieClip`
+
 returns the current instance of the `MovieClip`
-  *name* An identifier, if animation already exists with this name it will be replaced
-  *min* The frame on which to start
-  *max* The last frame to play
+> *name* An identifier, if animation already exists with this name it will be replaced
+> *min* The frame on which to start
+> *max* The last frame to play
 
 **removeAnimation(name)**
 
 Remove an animation
+
 returns the current instance of the `MovieClip`
-  *name* The identifier of the animation you wish to remove
+> *name* The identifier of the animation you wish to remove
 
 **updatePlayOptions(options)**
 
 Update the play options of this `MovieClip`
+
 returns the current instance of the `MovieClip`
-  *options* The play options you wish to set
+> *options* The play options you wish to set
 
 **then(func)**
 
 Add a function to be triggered when the current sequence has finished
+
 returns the current instance of the `MovieClip`
-  *func* The function to call
+> *func* The function to call
 
 **clearQueue()**
 
@@ -292,19 +304,22 @@ Clears the queue of functions added by using `then(func)`
 **addDelay(frames)**
 
 Pauses playback of the `MovieClip` for a number of frames
+
 returns the current instance of the `MovieClip`
-  *frames* The number of frames to pause playback for
+> *frames* The number of frames to pause playback for
 
 **clearDelay()**
 
 Clears any currently active delay
+
 returns the current instance of the `MovieClip`
 
 **play([options])**
 
 Plays the `MovieClip`
+
 returns the current instance of the `MovieClip`
-  *options* The play options to use
+> *options* The play options to use
 
 **stop()**
 
@@ -313,32 +328,37 @@ Stops the `MovieClip` if it is playing
 **nextFrame()**
 
 Jumps to the next frame, if the playhead is on the last frame it will jump to the first
+
 returns the current instance of the `MovieClip`
 
 **previousFrame()**
 
 Jumps to the previous frame, if the playhead is on on the first frame it will jump to the last
+
 returns the current instance of the `MovieClip`
 
 **gotoAndPlay(frame[,options])**
 
 Goes to a specified frame of the `MovieClip` and starts playing
+
 returns the current instance of the `MovieClip`
-  *frame* The frame to go to, it can be either a `string` for a cuepoint or animation or an `integer`
-  *options* The play options to use
+> *frame* The frame to go to, it can be either a `string` for a cuepoint or animation or an `integer`
+> *options* The play options to use
 
 **gotoAndStop(frame)**
 
 Goes to a specified frame of the `MovieClip` and stops
+
 returns the current instance of the `MovieClip`
-  *frame* The frame to go to, it can be either a `string` for a cue point or animation or an `integer`
+> *frame* The frame to go to, it can be either a `string` for a cue point or animation or an `integer`
 
 **addCuePoint(name,frame)**
 
 Adds a cue point to reference
+
 returns the current instance of the `MovieClip`
-  *name* The name to use for the cue point
-  *frame* The frame number to add the cue point
+> *name* The name to use for the cue point
+> *frame* The frame number to add the cue point
 
 **stopRepeating()**
 
