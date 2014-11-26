@@ -1,0 +1,40 @@
+{
+  "name": "scene.js",
+  "version": "0.0.1",
+  "description": "OHMY - Scene.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/weareohmy/scene.js"
+  },
+  "author": "Fraser Hobbs <fraser@ohmy.io> (http://ohmy.io)",
+  "bugs": {
+    "url": "https://github.com/weareohmy/scene.js/issues"
+  },
+  "licenses": [
+    {
+      "type": "MIT"
+    }
+  ],
+  "homepage": "https://github.com/weareohmy/scene.js",
+  "devDependencies": {
+    "browserify": "^6.2.0",
+    "coffee-script": "^1.8.0",
+    "coffeeify": "^0.7.0",
+    "debowerify": "^0.9.1",
+    "gulp": "^3.8.9",
+    "gulp-connect": "^2.2.0",
+    "gulp-derequire": "^2.0.0",
+    "gulp-duration": "0.0.0",
+    "gulp-header": "^1.2.2",
+    "gulp-if": "^1.2.5",
+    "gulp-livereload": "^2.1.1",
+    "gulp-streamify": "0.0.5",
+    "gulp-uglify": "^1.0.1",
+    "gulp-util": "^3.0.1",
+    "require-dir": "^0.1.0",
+    "uglifyify": "^2.6.0",
+    "vinyl-source-stream": "^1.0.0",
+    "watchify": "^2.1.1"
+  },
+  "dependencies": {}
+}
