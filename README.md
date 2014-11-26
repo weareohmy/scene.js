@@ -71,8 +71,8 @@ returns the instance of the `DisplayObject`
 **globalToLocal(point)**
 
 Converts a global point into a local point.
-> returns the local `Point` in relation to the `DisplayObject`
-> > *point* The global `Point` to convert
+returns the local `Point` in relation to the `DisplayObject`
+> *point* The global `Point` to convert
 
 **localToGlobal(point)**
 
